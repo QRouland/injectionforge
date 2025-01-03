@@ -16,7 +16,7 @@ frida = ["dep:frida", "dep:lazy_static", "dep:serde", "dep:serde_json"]
 frida-auto-download = ["frida/auto-download"]
 
 [dependencies]
-frida = { git = "https://github.com/dzervas/frida-rust", branch = "armhf-patches", optional = true }
+frida = { version = "0.14", optional = true } #git = "https://github.com/dzervas/frida-rust", branch = "armhf-patches", optional = true }
 lazy_static = { version = "1.4.0", optional = true }
 serde = { version = "1.0", features = ["derive"], optional = true }
 serde_json = { version = "1.0", optional = true }
